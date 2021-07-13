@@ -40,13 +40,6 @@ const Setting = () => {
         </SafeArea>
     );
 };
-const Maps = () => {
-    return (
-        <SafeArea>
-            <MapScreen />
-        </SafeArea>
-    );
-};
 
 export const AppNavigator = () => {
     return (
@@ -62,7 +55,7 @@ export const AppNavigator = () => {
                     name="Restaurant"
                     component={RestaurantsNavigator}
                 />
-                <Tab.Screen name="Maps" component={Maps} />
+                <Tab.Screen name="Maps" component={MapScreen} />
                 <Tab.Screen name="Settings" component={Setting} />
             </Tab.Navigator>
         </NavigationContainer>

@@ -13,6 +13,7 @@ import { theme } from './src/infrastructure/theme/index';
 import { RestaurantsContextProvider } from './src/sevices/restaurants/restaurants.context';
 import { LocationContextProvider } from './src/sevices/location/location.context';
 import { Navigation } from './src/infrastructure/navigation';
+
 export default function App() {
     const [oswaldLoaded] = useOswald({
         Oswald_400Regular,
