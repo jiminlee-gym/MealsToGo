@@ -16,7 +16,7 @@ import {
     Wrapping,
     Icon,
 } from './restaurant-info-card.styles';
-// import { Favorite } from '../../../components/favorites/favorite.component';
+import { Favorite } from '../../../components/favorites/favorite.component';
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
     const {
         name = 'Some Restaurant',
@@ -34,7 +34,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     const ratingArray = Array.from(new Array(Math.floor(rating)));
     return (
         <RestaurantCard elevation={10}>
-            {/* <Favorite /> */}
+            <Favorite restaurant={restaurant} />
             <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
             <Info>
                 <Text variant="label">{name}</Text>

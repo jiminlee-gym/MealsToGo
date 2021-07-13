@@ -18,13 +18,7 @@ const TAB_ICON = {
 const tabBarIcon =
     (iconName) =>
     ({ focused, size, color }) =>
-        (
-            <Ionicons
-                name={focused ? iconName[0] : iconName[1]}
-                size={size}
-                color={color}
-            />
-        );
+        <Ionicons name={focused ? iconName[0] : iconName[1]} size={size} color={color} />;
 
 const screenOptions = ({ route }) => {
     const iconName = TAB_ICON[route.name];
@@ -51,10 +45,7 @@ export const AppNavigator = () => {
                     inactiveTintColor: 'gray',
                 }}
             >
-                <Tab.Screen
-                    name="Restaurant"
-                    component={RestaurantsNavigator}
-                />
+                <Tab.Screen name="Restaurant" component={RestaurantsNavigator} />
                 <Tab.Screen name="Maps" component={MapScreen} />
                 <Tab.Screen name="Settings" component={Setting} />
             </Tab.Navigator>
